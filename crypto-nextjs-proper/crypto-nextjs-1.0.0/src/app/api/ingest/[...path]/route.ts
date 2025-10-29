@@ -1,3 +1,7 @@
+export const dynamic = "force-dynamic";
+export const runtime = "nodejs";
+
+
 import { NextRequest, NextResponse } from 'next/server';
 
 const BE_BASE = process.env.TRACKER_BE_BASE_URL!;       // e.g. http://202.10.42.99:1323/api/v1
