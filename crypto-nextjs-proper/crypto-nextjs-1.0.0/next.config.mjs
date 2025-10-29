@@ -3,12 +3,15 @@ const isProd = process.env.NODE_ENV === 'production'
 const basePath = isProd ? '/crypto-nextjs' : ''
 
 const nextConfig = {
-  output: 'export',
+  output: 'standalone',          
   trailingSlash: true,
   basePath: basePath,
   assetPrefix: basePath,
   images: {
     unoptimized: true
+  },
+  experimental: {
+    serverActions: true
   }
 };
 
