@@ -5,7 +5,7 @@ export default function TrackerClient() {
   useEffect(() => {
     (async () => {
       try {
-        const { initAutoTracking } = await import('/utils/tracker.js')
+        const { initAutoTracking } = await import('@/lib/tracker/tracker.js')
         await initAutoTracking()
       } catch (e) {
         console.warn('tracker init failed', e)
